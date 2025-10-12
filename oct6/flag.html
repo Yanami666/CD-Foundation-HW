@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Red Flags — China, Denmark, Switzerland</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #1d0202;
+    color: #ffe06e;
+  }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.top {
+    justify-content: flex-start;
+    padding-top: 16px;
+  }
+
+  section:not(.top) {
+    justify-content: center;
+  }
+
+  .flag {
+    position: relative;
+    width: 75vw;
+    aspect-ratio: 3 / 2;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  /*  China Flag  */
+  .cn { background: #de2910; }
+  .star {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    background: #ffde00;
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+    transform-origin: center;
+  }
+  .cn .big { width: 24%; left: 6.5%; top: 8.5%; }
+  .cn .s1 { width: 6%; left: 31%; top: 9%; transform: rotate(20deg); }
+  .cn .s2 { width: 6%; left: 36%; top: 22%; transform: rotate(-10deg); }
+  .cn .s3 { width: 6%; left: 36%; top: 36%; transform: rotate(0deg); }
+  .cn .s4 { width: 6%; left: 31%; top: 48%; transform: rotate(20deg); }
+
+  /*  Denmark Flag  */
+  .dk {
+    background: #ce072f;
+  }
+  .dk .bar-h, .dk .bar-v {
+    position: absolute;
+    background: white;
+  }
+  /* dk bar height/width */
+  .dk .bar-h {
+    top: 42%;
+    height: 12%;
+    left: 0;
+    right: 0;
+  }
+  .dk .bar-v {
+    left: 28%;
+    width: 10%;
+    top: 0;
+    bottom: 0;
+  }
+
+  /* Switzerland Flag  */
+  .ch {
+    background: #d52b1e;
+  }
+  .ch .bar-h, .ch .bar-v {
+    position: absolute;
+    background: white;
+  }
+  /* sw ch bar height/width */
+  .ch .bar-h {
+    width: 40%;
+    height: 20%;
+    left: 30%;
+    top: 40%;
+  }
+  .ch .bar-v {
+    height: 40%;
+    width: 20%;
+    left: 40%;
+    top: 30%;
+  }
+
+  a {
+    color: #ffe06e;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 中国 -->
+  <section class="top">
+    <div class="flag cn">
+      <div class="star big"></div>
+      <div class="star s1"></div>
+      <div class="star s2"></div>
+      <div class="star s3"></div>
+      <div class="star s4"></div>
+    </div>
+    <p>🇨🇳 China</p>
+  </section>
+
+  <!-- 丹麦 -->
+  <section>
+    <div class="flag dk">
+      <div class="bar-h"></div>
+      <div class="bar-v"></div>
+    </div>
+    <p>🇩🇰 Denmark</p>
+  </section>
+
+  <!-- 瑞士 -->
+  <section>
+    <div class="flag ch">
+      <div class="bar-h"></div>
+      <div class="bar-v"></div>
+    </div>
+    <p>🇨🇭 Switzerland</p>
+    <a href="/CD-Foundation-HW/index.html">✰ Back to main page ✰</a>
+  </section>
+
+</body>
+</html>
