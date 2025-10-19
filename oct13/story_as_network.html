@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Everything and Nothing — Borges</title>
+<style>
+/* Background & fonts */
+:root{
+  --bg1:#020b1c; --bg2:#0a1b4a; --bg3:#020b1c;
+  --ink:#c6e0ff;
+  --serif: "Times New Roman", serif;
+}
+html{
+  min-height:100%;
+  background: linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 50%,var(--bg3) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+  scroll-behavior: smooth;
+}
+body{
+    margin:0; font-family:var(--serif); line-height:2
+}
+
+/*  Header */
+.header{
+    margin-top: 2em;
+    text-align:center
+}
+.header h1{
+  margin:0;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3em;
+  color:white;
+}
+
+/* index */
+.toc{
+  position:sticky; 
+  top:0; 
+  z-index:50;
+  padding:.6rem 6vw;
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid #1c2738;
+  text-align:center;
+}
+.toc .wrap{
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:.35rem .6rem; 
+  justify-content:center;
+}
+.toc a{
+  font-family:'Times New Roman', Times, serif;
+  color:#e9ecff; text-decoration:none;
+  padding:.1rem .5rem;
+  border:1px solid #293155; border-radius:999px;
+  font-size:13px;
+  transition:color .2s,border-color .2s,background .2s
+}
+.toc a:hover{color:#fff;border-color:#ffffff60;background:#ffffff15}
+
+.main{
+  width:min(1100px,88vw);
+  margin:2rem auto 5rem;
+  display:flex; flex-direction:column;
+}
+.section{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items:start;
+  scroll-margin-top: 10vh;
+}
+.section:nth-child(odd) .text{grid-column:1; text-align:left}
+.section:nth-child(odd)::before{content:""; grid-column:2}
+
+.section:nth-child(even) .text{grid-column:2; text-align:left}
+.section:nth-child(even)::before{content:""; grid-column:1}
+
+.text{ max-width:58ch; font-size:18px}
+.text h3{
+  margin:0 0 .5rem 0;
+  font-family:'Times New Roman', Times, serif;
+  font-size:20px;
+  color:#ccdbff;
+}
+
+/* Mobile */
+@media (max-width:800px){
+  .section{ display:block; scroll-margin-top: 24vh; }
+  .text{ margin-bottom:2.2rem }
+}
+
+/* Credit */
+.credit{
+  text-align:center;
+  font-family:'Times New Roman', Times, serif; 
+  color:#ccdbff;
+  margin:3rem 5rem;
+}
+</style>
+</head>
+
+
+<body>
+
+<header class="header">
+  <h1>Everything and Nothing</h1>
+</header>
+
+<nav class="toc" aria-label="On-page navigation">
+  <div class="wrap">
+    <a href="#b1">1 · Emptiness</a>
+    <a href="#b2">2 · Assumptions</a>
+    <a href="#b3">3 · London</a>
+    <a href="#b4">4 · Proteus</a>
+    <a href="#b5">5 · Confessions</a>
+    <a href="#b6">6 · Tedium</a>
+    <a href="#b7">7 · Return</a>
+    <a href="#b8">8 · Myself</a>
+    <a href="#b9">9 · Voice of God</a>
+  </div>
+</nav>
+
+<main class="main">
+  <section id="b1" class="section"><div class="text">
+    <h3>Emptiness</h3>
+    <p>There was no one inside him, nothing but a trace of chill, a dream dreamt by no one else behind the face that looks like no other face (even in the bad paintings of the period) and the abundant, whimsical, impassioned words.</p>
+  </div></section>
+
+  <section id="b2" class="section"><div class="text">
+    <h3>Assumptions & Initiation</h3>
+    <p>He started out assuming that everyone was just like him; the puzzlement of a friend to whom he had confided a little of his emptiness revealed his error and left him with the lasting impression that the individual should not diverge from the species. At one time he thought he could find a cure for his ailment in books and accordingly learned the "small Latin and less Greek" to which a contemporary later referred. He next decided that what he was looking for might be found in the practice of one of humanity's more elemental rituals: he allowed Anne Hathaway to initiate him over the course of a long June afternoon.</p>
+  </div></section>
+
+  <section id="b3" class="section"><div class="text">
+    <h3>London & Stage</h3>
+    <p>In his twenties he went to London. He had become instinctively adept at pretending to be somebody, so that no one would suspect he was in fact nobody. In London he discovered the profession for which he was destined, that of the actor who stands on a stage and pretends to be someone else in front of a group of people who pretend to take him for that other person.</p>
+  </div></section>
+
+  <section id="b4" class="section"><div class="text">
+    <h3>Proteus & Many</h3>
+    <p>Theatrical work brought him rare happiness, possibly the first he had ever known–but when the last line had been applauded and the last corpse removed from the stage, the odious shadow of unreality fell over him again: he ceased being Ferrex or Tamburlaine and went back to being nobody. Hard pressed, he took to making up other heroes, other tragic tales. While his body fulfilled its bodily destiny in the taverns and brothels of London, the soul inside it belonged to Caesar who paid no heed to the oracle's warnings adn Juliet who hated skylarks and Macbeth in conversation, on the heath, with witches who were also the Fates. No one was as many men as this man: like the Egyptian Proteus, he used up the forms of all creatures.</p>
+  </div></section>
+
+  <section id="b5" class="section"><div class="text">
+    <h3>Confessions & Iago</h3>
+    <p>Every now and then he would tuck a confession into some hidden corner of his work, certain that no one would spot it. Richard states that he plays many roles in one, and Iago makes the odd claim: "I am not what I am." The fundamental identity of existing, dreaming, and acting inspired him to write famous lines.</p>
+  </div></section>
+
+  <section id="b6" class="section"><div class="text">
+    <h3>Tedium & Sale</h3>
+    <p>For twenty years he kept up this controlled delirium. Then one morning he was overcome by the tedium and horror of being all those kings who died by the sword and all those thwarted lovers who came together and broke apart and melodiously suffered. That very day he decided to sell his troupe.</p>
+  </div></section>
+
+  <section id="b7" class="section"><div class="text">
+    <h3>Return & Will</h3>
+    <p>Before the week was out he had returned to his hometown: there he reclaimed the trees and the river of his youth without tying them to the other selves that his muse had sung, decked out in mythological allusion and latinate words. He had to be somebody, and so he became a retired impresario who dabbled in money-lending, lawsuits, and petty usury. It was as this character that he wrote the rather dry last will and testament with which we are familiar, having purposefully expunged from it every trace of emotion and every literary flourish. When friends visited him from London, he went back to playing the role of poet for their benefit.</p>
+  </div></section>
+
+  <section id="b8" class="section"><div class="text">
+    <h3>One Man, Myself</h3>
+    <p>The story goes that shortly before or after his death, when he found himself in the presence of God, he said: "I who have been so many men in vain want to be one man only, myself."</p>
+  </div></section>
+
+  <section id="b9" class="section"><div class="text">
+    <h3>Voice of God</h3>
+    <p>The voice of God answered him out of a whirlwind: "Neither am I what I am. I dreamed the world the way you dreamt your plays, dear Shakespeare. You are one of the shapes of my dreams: like me, you are everything and nothing."</p>
+  </div></section>
+</main>
+
+<div class="credit">Spanish; trans. Kenneth Krabbenhoft<br><hr>
+    <a href="/CD-Foundation-HW/index.html">✰ Back to main page ✰</a>
+</div>
+
+</body>
+</html>
